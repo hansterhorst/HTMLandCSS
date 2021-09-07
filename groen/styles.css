@@ -1,0 +1,50 @@
+body {
+    font-family: "Lucida Grande", sans-serif;
+    color: hsl(63, 56%, 10%);
+    background-color: hsl(74, 95%, 93%);
+}
+
+h1 {
+    color: hsl(74, 95%, 93%);
+    text-align: center;
+}
+
+header {
+    background-color: hsl(63, 56%, 38%);
+    padding: 1rem 1rem;
+    border: 3px dashed hsl(63, 56%, 10%);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+main {
+    border: 5px double hsl(63, 56%, 38%);
+    padding: 1rem;
+    position: relative;
+}
+
+article {
+    border: 2px solid hsl(63, 56%, 38%);
+    border-radius: 8px 8px 0 0;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: hsla(63, 56%, 38%, 0.3);
+}
+
+.circle-one, .circle-two {
+    background-color: hsl(23, 100%, 65%);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.circle-one {
+    box-shadow: 0 0 15px hsl(23, 100%, 35%);
+    margin-right: 1rem;
+}
+
+.circle-two {
+    box-shadow: 5px 5px 5px hsl(63, 56%, 10%);
+}
