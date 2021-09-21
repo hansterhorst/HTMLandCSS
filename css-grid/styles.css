@@ -1,0 +1,79 @@
+/* Maak hier jouw CSS! */
+
+.grid-container {
+    background-color: lemonchiffon;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:not(.grid-item-b) {
+    height: 50px;
+}
+
+.grid-item-a {
+    grid-area: a;
+}
+
+.grid-item-b {
+    grid-area: b;
+}
+
+.grid-item-b p {
+    padding: 0 1rem;
+}
+
+.grid-item-c {
+    grid-area: c;
+}
+
+.grid-item-d {
+    grid-area: d;
+}
+
+.grid-item-e {
+    grid-area: e;
+}
+
+.grid-item-f {
+    grid-area: f;
+}
+
+.empty-div {
+    display: block;
+    height: 50px;
+}
+
+
+/* for wider screens */
+@media screen and (min-width: 480px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-rows:  50px 174px 100px auto 50px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a c c "
+            "b c c"
+            "b e d"
+            "b e ."
+            "f f f";
+    }
+
+    .grid-item:not(.grid-item-b) {
+        height: 100%;
+    }
+
+    .empty-div {
+        display: none;
+    }
+
+}
